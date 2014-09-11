@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="qrcode_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>30</y>
+     <width>291</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qrcode_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>98</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>crear codigo:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>380</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>salir</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>241</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>registrar nueva persona</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>qrcode_3</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_7</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>registro()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>volver()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>495</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qrcode_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>codigos()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>codigos()</slot>
+  <slot>registro()</slot>
+  <slot>volver()</slot>
+ </slots>
+</ui>
